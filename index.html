@@ -15,7 +15,7 @@
   <link href="css/style.css" rel="stylesheet">
 
   <!-- Browser tab icon logo -->
-  <link rel="shortcut icon" type="image/x-icon" href="images_src/elephant_logo.jpg" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/elephant_logo.jpg" />
 
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.js"></script>
@@ -39,7 +39,7 @@
     </button>
     <a class="navbar-brand brand" href="#">
       <picture>
-        <img src="images_src/elephant_logo.svg" class="img-fluid logo" alt="elephant logo">
+        <img src="images/elephant_logo.svg" class="img-fluid logo" alt="elephant logo">
       </picture>
     </a>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -67,11 +67,12 @@
         <h3 class="text-muted">Front-end Developer</h3>
       </div>
     </header>
+
     <picture>
-<!--       <source media="(min-width:750px)" srcset="images/sfo-large_2x.jpg 2x, images//sfo-large_1x.jpg" alt="#">
-  <source media="(min-width:450px)" srcset="images/sfo-750_1x.jpg" alt="#"> -->
-    <img src="images_src/landscape.png" class="img-fluid col-12 splash" data-toggle="modal" data-target="#splash" alt="responsive image">
-  </picture>
+      <source media="(min-width:992px)" srcset="images/landscape-large_1600_2x.png 2x, images/landscape-large_800_1x.png">
+      <source media="(min-width:768px)" srcset="images/landscape-medium.png">
+      <img src="images/landscape-small.png" class="img-fluid col-12 splash" data-toggle="modal" data-target="#splash" alt="me overlooking the mount tamalpais">
+    </picture>
 </section>
 
 <!-- Main content showing featured work -->
@@ -85,12 +86,20 @@
 
   <article class="row">
     <div class="col-xl-6">
-      <img src="images_src/arcade_game.jpg" class="img-fluid" data-toggle="modal" data-target="#arcade_game" alt="arcade game screenshot">
+      <picture>
+        <source media="(min-width:992px)" srcset="images/arcade_game-large_1600_2x.jpg 2x, images/arcade_game-large_800_1x.jpg">
+        <source media="(min-width:768px)" srcset="images/arcade_game-medium.jpg">
+        <img src="images/arcade_game-small.jpg" class="img-fluid" data-toggle="modal" data-target="#arcade_game" alt="arcade game screenshot">
+      </picture>
       <h3 class="text-muted">Arcade Game</h3>
       <p><a href="#">Link to project</a></p>
     </div>
     <div class="col-xl-6">
-      <img src="images_src/web_optimization.png" class="img-fluid" data-toggle="modal" data-target="#web_op" alt="graphics of optimization devices">
+      <picture>
+        <source media="(min-width:992px)" srcset="images/web_optimization-large_1600_2x.png 2x, images/web_optimization-large_800_1x.png">
+        <source media="(min-width:768px)" srcset="images/web_optimization-medium.png">
+        <img src="images/web_optimization-small.png" class="img-fluid" data-toggle="modal" data-target="#web_op" alt="graphics of optimization devices">
+      </picture>
       <h3 class="text-muted">Website Optimization</h3>
       <p><a href="#">Link to project</a></p>
     </div>
@@ -98,12 +107,20 @@
 
   <article class="row">
     <div class="col-xl-6">
-      <img src="images_src/neighborhood_app.jpg" class="img-fluid" data-toggle="modal" data-target="#neighborhood_app" alt="map of a neighborhood">
+      <picture>
+        <source media="(min-width:992px)" srcset="images/neighborhood_app-large_1600_2x.jpg 2x, images/neighborhood_app-large_800_1x.jpg">
+        <source media="(min-width:768px)" srcset="images/neighborhood_app-medium.jpg">
+        <img src="images/neighborhood_app-small.jpg" class="img-fluid" data-toggle="modal" data-target="#neighborhood_app" alt="map of a neighborhood">
+      </picture>
       <h3 class="text-muted">Neighborhood App</h3>
       <p><a href="#">Link to project</a></p>
     </div>
     <div class="col-xl-6">
-      <img src="images_src/healthways_website.png" class="img-fluid" data-toggle="modal" data-target="#healthways" alt="responsive image">
+      <picture>
+        <source media="(min-width:992px)" srcset="images/healthways_website-large_1600_2x.png 2x, images/healthways_website-large_800_1x.png">
+        <source media="(min-width:768px)" srcset="images/healthways_website-medium.png">
+        <img src="images/healthways_website-small.png" class="img-fluid" data-toggle="modal" data-target="#healthways" alt="responsive image">
+      </picture>
       <h3 class="text-muted">Healthways</h3>
       <p><a href="#">Link to project</a></p>
     </div>
@@ -118,7 +135,7 @@
       <a target="_blank" href="http://digg.com/u/jevell" class="zocial-digg col-lg-3">Digg</a>
     </div>
 
-    <a target="_blank" href="//github.com/udacity/responsive-images/tree/master/project/final" class="col-lg-12" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+    <a target="_blank" href="https://github.com/jevellangelo/portfolio" class="col-lg-12" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
   </footer>
 </main>
 
@@ -131,7 +148,11 @@
         <h4 class="modal-title" id="myModalLabel">Udacity Arcade Game Project</h4>
       </div>
       <div class="modal-body text-center">
-        <img class="img-fluid" src="images_src/arcade_game.jpg">
+        <picture>
+          <source media="(min-width:992px)" srcset="images/arcade_game-large_1600_2x.jpg 2x, images/arcade_game-large_800_1x.jpg">
+          <source media="(min-width:768px)" srcset="images/arcade_game-medium.jpg">
+          <img src="images/arcade_game-small.jpg" class="img-fluid" data-toggle="modal" data-target="#arcade_game" alt="arcade game screenshot">
+        </picture>
         <p class="text-justify">I was provided with visual assets and a game loop engine; using these tools I added number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger.</p>
       </div>
       <div class="modal-footer">
@@ -148,7 +169,11 @@
         <h4 class="modal-title" id="myModalLabel">Udacity Neighborhood Map Project</h4>
       </div>
       <div class="modal-body text-center">
-        <img class="img-fluid" src="images_src/neighborhood_app.jpg">
+        <picture>
+          <source media="(min-width:992px)" srcset="images/neighborhood_app-large_1600_2x.jpg 2x, images/neighborhood_app-large_800_1x.jpg">
+          <source media="(min-width:768px)" srcset="images/neighborhood_app-medium.jpg">
+          <img src="images/neighborhood_app-small.jpg" class="img-fluid" data-toggle="modal" data-target="#neighborhood_app" alt="map of a neighborhood">
+        </picture>
         <p class="text-justify">I developed a single-page application featuring a map of my neighborhood. I added additional functionality to this application, including: map markers to identify popular locations, a search function to easily discover these locations, and a listview to support simple browsing of all locations. I researched and implemented third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).</p>
       </div>
       <div class="modal-footer">
@@ -165,7 +190,11 @@
         <h4 class="modal-title" id="myModalLabel">Udacity Website Optimization Project</h4>
       </div>
       <div class="modal-body text-center">
-        <img class="img-fluid" src="images_src/web_optimization.png">
+        <picture>
+          <source media="(min-width:992px)" srcset="images/web_optimization-large_1600_2x.png 2x, images/web_optimization-large_800_1x.png">
+          <source media="(min-width:768px)" srcset="images/web_optimization-medium.png">
+          <img src="images/web_optimization-small.png" class="img-fluid" data-toggle="modal" data-target="#web_op" alt="graphics of optimization devices">
+        </picture>
         <p class="text-justify">I optimized a provided website with a number of optimization- and performance-related issues so that it achieved a target PageSpeed score and ran at 60 frames per second.</p>
       </div>
       <div class="modal-footer">
@@ -182,7 +211,11 @@
         <h4 class="modal-title" id="myModalLabel">Healthways Website</h4>
       </div>
       <div class="modal-body text-center">
-        <img class="img-fluid" src="images_src/healthways_website.png">
+        <picture>
+         <source media="(min-width:992px)" srcset="images/healthways_website-large_1600_2x.png 2x, images/healthways_website-large_800_1x.png">
+         <source media="(min-width:768px)" srcset="images/healthways_website-medium.png">
+         <img src="images/healthways_website-small.png" class="img-fluid" data-toggle="modal" data-target="#healthways" alt="responsive image">
+        </picture>
         <p class="text-justify">Healthways is a non-profit organization that facilitate community empowerment through inegrated assistance on health, education, livelihood, and organizing services.</p>
         <p class="text-justify">⚙ Website under construction...</p>
       </div>
