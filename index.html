@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -53,9 +53,6 @@
         <li class="nav-item">
           <a class="nav-link" href="index.html#social">Contact</a>
         </li>
-<!--         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li> -->
       </ul>
     </div>
   </nav>
@@ -68,10 +65,8 @@
       </div>
     </header>
     <picture>
-<!--       <source media="(min-width:750px)" srcset="images/sfo-large_2x.jpg 2x, images//sfo-large_1x.jpg" alt="#">
-  <source media="(min-width:450px)" srcset="images/sfo-750_1x.jpg" alt="#"> -->
-    <img src="images_src/landscape.png" class="img-fluid col-12 splash" data-toggle="modal" data-target="#splash" alt="responsive image">
-  </picture>
+      <img src="images_src/landscape.png" class="img-fluid col-12 splash" data-toggle="modal" data-target="#splash" alt="responsive image">
+    </picture>
 </section>
 
 <!-- Main content showing featured work -->
@@ -85,12 +80,16 @@
 
   <article class="row">
     <div class="col-xl-6">
-      <img src="images_src/arcade_game.jpg" class="img-fluid" data-toggle="modal" data-target="#arcade_game" alt="arcade game screenshot">
+      <picture>
+        <img src="images_src/arcade_game.jpg" class="img-fluid" data-toggle="modal" data-target="#arcade_game" alt="arcade game screenshot">
+      </picture>
       <h3 class="text-muted">Arcade Game</h3>
       <p><a href="#">Link to project</a></p>
     </div>
     <div class="col-xl-6">
-      <img src="images_src/web_optimization.png" class="img-fluid" data-toggle="modal" data-target="#web_op" alt="graphics of optimization devices">
+      <picture>
+        <img src="images_src/web_optimization.png" class="img-fluid" data-toggle="modal" data-target="#web_op" alt="graphics of optimization devices">
+      </picture>
       <h3 class="text-muted">Website Optimization</h3>
       <p><a href="#">Link to project</a></p>
     </div>
@@ -98,12 +97,16 @@
 
   <article class="row">
     <div class="col-xl-6">
-      <img src="images_src/neighborhood_app.jpg" class="img-fluid" data-toggle="modal" data-target="#neighborhood_app" alt="map of a neighborhood">
+      <picture>
+        <img src="images_src/neighborhood_app.jpg" class="img-fluid" data-toggle="modal" data-target="#neighborhood_app" alt="map of a neighborhood">
+      </picture>
       <h3 class="text-muted">Neighborhood App</h3>
       <p><a href="#">Link to project</a></p>
     </div>
     <div class="col-xl-6">
-      <img src="images_src/healthways_website.png" class="img-fluid" data-toggle="modal" data-target="#healthways" alt="responsive image">
+      <picture>
+        <img src="images_src/healthways_website.png" class="img-fluid" data-toggle="modal" data-target="#healthways" alt="healthways logo mockup">
+      </picture>
       <h3 class="text-muted">Healthways</h3>
       <p><a href="#">Link to project</a></p>
     </div>
@@ -118,20 +121,22 @@
       <a target="_blank" href="http://digg.com/u/jevell" class="zocial-digg col-lg-3">Digg</a>
     </div>
 
-    <a target="_blank" href="//github.com/udacity/responsive-images/tree/master/project/final" class="col-lg-12" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+    <a target="_blank" href="https://github.com/jevellangelo/portfolio" class="col-lg-12" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
   </footer>
 </main>
 
 
 <!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="arcade_game" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" id="arcade_game" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Udacity Arcade Game Project</h4>
+        <h4 class="modal-title" id="myLargeModalLabel1">Udacity Arcade Game Project</h4>
       </div>
       <div class="modal-body text-center">
-        <img class="img-fluid" src="images_src/arcade_game.jpg">
+        <picture>
+          <img class="img-fluid" src="images_src/arcade_game.jpg" alt="arcade game screenshot">
+        </picture>
         <p class="text-justify">I was provided with visual assets and a game loop engine; using these tools I added number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger.</p>
       </div>
       <div class="modal-footer">
@@ -141,31 +146,16 @@
   </div>
 </div>
 <!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="neighborhood_app" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" id="web_op" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel2" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Udacity Neighborhood Map Project</h4>
+        <h4 class="modal-title" id="myLargeModalLabel2">Udacity Website Optimization Project</h4>
       </div>
       <div class="modal-body text-center">
-        <img class="img-fluid" src="images_src/neighborhood_app.jpg">
-        <p class="text-justify">I developed a single-page application featuring a map of my neighborhood. I added additional functionality to this application, including: map markers to identify popular locations, a search function to easily discover these locations, and a listview to support simple browsing of all locations. I researched and implemented third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="web_op" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Udacity Website Optimization Project</h4>
-      </div>
-      <div class="modal-body text-center">
-        <img class="img-fluid" src="images_src/web_optimization.png">
+        <picture>
+          <img class="img-fluid" src="images_src/web_optimization.png" alt="graphics of optimization devices">
+        </picture>
         <p class="text-justify">I optimized a provided website with a number of optimization- and performance-related issues so that it achieved a target PageSpeed score and ran at 60 frames per second.</p>
       </div>
       <div class="modal-footer">
@@ -175,14 +165,35 @@
   </div>
 </div>
 <!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="healthways" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" id="neighborhood_app" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel3" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Healthways Website</h4>
+        <h4 class="modal-title" id="myLargeModalLabel3">Udacity Neighborhood Map Project</h4>
       </div>
       <div class="modal-body text-center">
-        <img class="img-fluid" src="images_src/healthways_website.png">
+        <picture>
+          <img class="img-fluid" src="images_src/neighborhood_app.jpg" alt="map of a neighborhood">
+        </picture>
+        <p class="text-justify">I developed a single-page application featuring a map of my neighborhood. I added additional functionality to this application, including: map markers to identify popular locations, a search function to easily discover these locations, and a listview to support simple browsing of all locations. I researched and implemented third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade bd-example-modal-lg" id="healthways" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel4" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myLargeModalLabel4">Healthways Website</h4>
+      </div>
+      <div class="modal-body text-center">
+        <picture>
+          <img class="img-fluid" src="images_src/healthways_website.png" alt="healthways logo mockup">
+        </picture>
         <p class="text-justify">Healthways is a non-profit organization that facilitate community empowerment through inegrated assistance on health, education, livelihood, and organizing services.</p>
         <p class="text-justify">⚙ Website under construction...</p>
       </div>

@@ -3,7 +3,6 @@ html {
 }
 
 body {
-    /*background-color: #F1F1F1;*/
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -18,7 +17,6 @@ header {
 section.viewport {
     max-width: 100%;
     padding: 0;
-    /*height: 50vh;*/
 }
 
 main {
@@ -33,7 +31,6 @@ main {
 .logo {
     width: 2em;
     height: 2em;
-    /*padding-top: 20px;*/
 }
 
 
@@ -71,7 +68,6 @@ a#viewSource {
     margin-right: 15px;
     padding-left: 0px;
     padding-right: 0px;
-    /*border-top: 1px solid #ddd;*/
     padding-top: 15px;
     text-align: center;
     display: inline-flex;
@@ -107,10 +103,3 @@ a.zocial-twitter,a.zocial-facebook,a.zocial-googleplus,a.zocial-digg {
     font-size: 20px;
   }
 }
-
-
-
-
-/*a:hover [class*="zocial-"]:before {
-  color: #3d85c6;
-}*/
