@@ -1,0 +1,116 @@
+html {
+    font-size: 12px;
+}
+
+body {
+    /*background-color: #F1F1F1;*/
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section.viewport {
+    max-width: 100%;
+    padding: 0;
+    /*height: 50vh;*/
+}
+
+main {
+    padding-top: 2em;
+}
+
+.nav-item {
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.logo {
+    width: 2em;
+    height: 2em;
+    /*padding-top: 20px;*/
+}
+
+
+.name-title {
+    padding-top: 40px;
+}
+
+.splash {
+    padding: 0;
+}
+
+[class*="zocial-"]:before {
+    color: black;
+    display: inline-block;
+    font-family: 'zocial', sans-serif;
+    text-shadow: 3px 3px 3px #aaa;
+    width: 2em;
+}
+
+a {
+    color: #4183C4;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+a#viewSource {
+    text-align: center;
+    display: block;
+    margin: 1.3em 0 0 0;
+    padding: 1em 0 0 0;
+}
+
+.social {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    /*border-top: 1px solid #ddd;*/
+    padding-top: 15px;
+    text-align: center;
+    display: inline-flex;
+}
+
+a.zocial-twitter,a.zocial-facebook,a.zocial-googleplus,a.zocial-digg {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+/*Media queries to change website font size*/
+
+@media (min-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+
+
+
+/*a:hover [class*="zocial-"]:before {
+  color: #3d85c6;
+}*/
