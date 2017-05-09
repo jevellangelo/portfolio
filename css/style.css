@@ -3,24 +3,28 @@ html {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 header {
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
-section.viewport {
+.splash {
+    padding-left:0;
+    padding-right:0;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 100%;
-    padding: 0;
 }
 
 main {
     padding-top: 2em;
+}
+
+.navbar-nav {
+    float: right;
+    text-align: right;
 }
 
 .nav-item {
@@ -36,10 +40,6 @@ main {
 
 .name-title {
     padding-top: 40px;
-}
-
-.splash {
-    padding: 0;
 }
 
 [class*="zocial-"]:before {
@@ -103,3 +103,4 @@ a.zocial-twitter,a.zocial-facebook,a.zocial-googleplus,a.zocial-digg {
     font-size: 20px;
   }
 }
+

@@ -11,35 +11,35 @@
   <!-- Tether -->
   <script src="bower_components/tether/dist/js/tether.min.js"></script>
 
-  <!-- Style CSS -->
-  <link href="css/style.css" rel="stylesheet">
-
   <!-- jQuery -->
-  <script type="text/javascript" src="js/jquery.js"></script>
+  <script src="js/jquery.js"></script>
 
   <!-- Bootstrap javascript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
   <!-- Load v1 spec polyfills (HTML Imports, Custom Elements, Shady DOM/CSS ) -->
   <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
   <!-- Loads the zocial icons -->
-  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+  <link href="http://weloveiconfonts.com/api/?family=zocial" rel="stylesheet">
 
   <!-- Loads the Quicksand font from Google -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 
+  <!-- Style CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
   <!-- Page title -->
   <title>Jevell Acebedo</title>
   <!-- Browser tab icon logo -->
-  <link rel="shortcut icon" type="image/x-icon" href="images_src/elephant_logo.jpg" />
+  <link rel="shortcut icon" type="image/x-icon" href="images_src/elephant_logo.jpg">
 
 </head>
 
 <body>
 
 
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded col-12">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded container-fluid">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -63,152 +63,150 @@
     </div>
   </nav>
 
-  <section class="splash col-12">
-    <header class="row">
-      <div class="col-12 text-lg-right text-xl-right text-sm-left text-md-right text-uppercase name-title">
+  <section class="splash">
+    <header>
+      <div class="text-lg-right text-xl-right text-sm-left text-md-right text-uppercase name-title">
         <h1 class="#">J&nbsp;e&nbsp;v&nbsp;e&nbsp;l&nbsp;l&nbsp;&nbsp;&nbsp;A&nbsp;c&nbsp;e&nbsp;b&nbsp;e&nbsp;d&nbsp;o </h1>
         <h3 class="text-muted">Front-end Developer</h3>
       </div>
+      <picture class="img-fluid">
+        <img src="images_src/landscape.png" class="img-fluid" data-toggle="modal" data-target="#splash" alt="responsive image">
+      </picture>
     </header>
-    <picture>
-      <img src="images_src/landscape.png" class="img-fluid col-12 splash" data-toggle="modal" data-target="#splash" alt="responsive image">
-    </picture>
-</section>
+  </section>
 
-<!-- Main content showing featured work -->
-<main class="container">
+  <!-- Main content showing featured work -->
+  <main class="container">
 
-  <article class="row">
-    <div class="col-lg-12">
-      <h2 id="featured">Featured Work</h2>
-    </div>
-  </article>
-
-  <article class="row">
-    <div class="col-xl-6">
-      <picture>
-        <img src="images_src/arcade_game.jpg" class="img-fluid" data-toggle="modal" data-target="#arcade_game" alt="arcade game screenshot">
-      </picture>
-      <h3 class="text-muted">Arcade Game</h3>
-      <p><a href="#">Link to project</a></p>
-    </div>
-    <div class="col-xl-6">
-      <picture>
-        <img src="images_src/web_optimization.png" class="img-fluid" data-toggle="modal" data-target="#web_op" alt="graphics of optimization devices">
-      </picture>
-      <h3 class="text-muted">Website Optimization</h3>
-      <p><a href="#">Link to project</a></p>
-    </div>
-  </article>
-
-  <article class="row">
-    <div class="col-xl-6">
-      <picture>
-        <img src="images_src/neighborhood_app.jpg" class="img-fluid" data-toggle="modal" data-target="#neighborhood_app" alt="map of a neighborhood">
-      </picture>
-      <h3 class="text-muted">Neighborhood App</h3>
-      <p><a href="#">Link to project</a></p>
-    </div>
-    <div class="col-xl-6">
-      <picture>
-        <img src="images_src/healthways_website.png" class="img-fluid" data-toggle="modal" data-target="#healthways" alt="healthways logo mockup">
-      </picture>
-      <h3 class="text-muted">Healthways</h3>
-      <p><a href="#">Link to project</a></p>
-    </div>
-  </article>
-
-<!-- Footer -->
-  <footer class="row" id="social">
-    <div class="social col-lg-12">
-      <a target="_blank" href="https://twitter.com/jevellacebedo" class="zocial-twitter col-lg-3">Twitter</a>
-      <a target="_blank" href="https://www.facebook.com/jfacebedo" class="zocial-facebook col-lg-3">Facebook</a>
-      <a target="_blank" href="https://plus.google.com/+JevellAcebedo" class="zocial-googleplus col-lg-3">Google+</a>
-      <a target="_blank" href="http://digg.com/u/jevell" class="zocial-digg col-lg-3">Digg</a>
-    </div>
-
-    <a target="_blank" href="https://github.com/jevellangelo/portfolio" class="col-lg-12" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
-  </footer>
-</main>
-
-
-<!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="arcade_game" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myLargeModalLabel1">Udacity Arcade Game Project</h4>
+    <article class="row">
+      <div class="col-lg-12">
+        <h2 id="featured">Featured Work</h2>
       </div>
-      <div class="modal-body text-center">
+    </article>
+    <article class="row">
+      <div class="col-md-6">
         <picture>
-          <img class="img-fluid" src="images_src/arcade_game.jpg" alt="arcade game screenshot">
+          <img src="images_src/arcade_game.jpg" class="img-fluid" data-toggle="modal" data-target="#arcade_game" alt="arcade game screenshot">
         </picture>
-        <p class="text-justify">I was provided with visual assets and a game loop engine; using these tools I added number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger.</p>
+        <h3 class="text-muted">Arcade Game</h3>
+        <p><a href="#">Link to project</a></p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <div class="col-md-6">
+        <picture>
+          <img src="images_src/web_optimization.png" class="img-fluid" data-toggle="modal" data-target="#web_op" alt="graphics of optimization devices">
+        </picture>
+        <h3 class="text-muted">Website Optimization</h3>
+        <p><a href="#">Link to project</a></p>
+      </div>
+      <div class="col-md-6">
+        <picture>
+          <img src="images_src/neighborhood_app.jpg" class="img-fluid" data-toggle="modal" data-target="#neighborhood_app" alt="map of a neighborhood">
+        </picture>
+        <h3 class="text-muted">Neighborhood App</h3>
+        <p><a href="#">Link to project</a></p>
+      </div>
+      <div class="col-md-6">
+        <picture>
+          <img src="images_src/healthways_website.png" class="img-fluid" data-toggle="modal" data-target="#healthways" alt="healthways logo mockup">
+        </picture>
+        <h3 class="text-muted">Healthways</h3>
+        <p><a href="#">Link to project</a></p>
+      </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="row" id="social">
+      <div class="social col-lg-12">
+        <a target="_blank" href="https://twitter.com/jevellacebedo" class="zocial-twitter col-lg-3">Twitter</a>
+        <a target="_blank" href="https://www.facebook.com/jfacebedo" class="zocial-facebook col-lg-3">Facebook</a>
+        <a target="_blank" href="https://plus.google.com/+JevellAcebedo" class="zocial-googleplus col-lg-3">Google+</a>
+        <a target="_blank" href="http://digg.com/u/jevell" class="zocial-digg col-lg-3">Digg</a>
+      </div>
+
+      <div class="col-lg-12">
+        <a target="_blank" href="https://github.com/jevellangelo/portfolio" class="col-lg-12" title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+      </div>
+    </footer>
+  </main>
+
+
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="arcade_game" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myLargeModalLabel1">Udacity Arcade Game Project</h4>
+        </div>
+        <div class="modal-body text-center">
+          <picture>
+            <img class="img-fluid" src="images_src/arcade_game.jpg" alt="arcade game screenshot">
+          </picture>
+          <p class="text-justify">I was provided with visual assets and a game loop engine; using these tools I added number of entities to the game including the player characters and enemies to recreate the classic arcade game Frogger.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="web_op" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel2" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myLargeModalLabel2">Udacity Website Optimization Project</h4>
-      </div>
-      <div class="modal-body text-center">
-        <picture>
-          <img class="img-fluid" src="images_src/web_optimization.png" alt="graphics of optimization devices">
-        </picture>
-        <p class="text-justify">I optimized a provided website with a number of optimization- and performance-related issues so that it achieved a target PageSpeed score and ran at 60 frames per second.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="neighborhood_app" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel3" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myLargeModalLabel3">Udacity Neighborhood Map Project</h4>
-      </div>
-      <div class="modal-body text-center">
-        <picture>
-          <img class="img-fluid" src="images_src/neighborhood_app.jpg" alt="map of a neighborhood">
-        </picture>
-        <p class="text-justify">I developed a single-page application featuring a map of my neighborhood. I added additional functionality to this application, including: map markers to identify popular locations, a search function to easily discover these locations, and a listview to support simple browsing of all locations. I researched and implemented third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="web_op" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myLargeModalLabel2">Udacity Website Optimization Project</h4>
+        </div>
+        <div class="modal-body text-center">
+          <picture>
+            <img class="img-fluid" src="images_src/web_optimization.png" alt="graphics of optimization devices">
+          </picture>
+          <p class="text-justify">I optimized a provided website with a number of optimization- and performance-related issues so that it achieved a target PageSpeed score and ran at 60 frames per second.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="healthways" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel4" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myLargeModalLabel4">Healthways Website</h4>
-      </div>
-      <div class="modal-body text-center">
-        <picture>
-          <img class="img-fluid" src="images_src/healthways_website.png" alt="healthways logo mockup">
-        </picture>
-        <p class="text-justify">Healthways is a non-profit organization that facilitate community empowerment through inegrated assistance on health, education, livelihood, and organizing services.</p>
-        <p class="text-justify">⚙ Website under construction...</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="neighborhood_app" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myLargeModalLabel3">Udacity Neighborhood Map Project</h4>
+        </div>
+        <div class="modal-body text-center">
+          <picture>
+            <img class="img-fluid" src="images_src/neighborhood_app.jpg" alt="map of a neighborhood">
+          </picture>
+          <p class="text-justify">I developed a single-page application featuring a map of my neighborhood. I added additional functionality to this application, including: map markers to identify popular locations, a search function to easily discover these locations, and a listview to support simple browsing of all locations. I researched and implemented third-party APIs that provide additional information about each of these locations (such as StreetView images, Wikipedia articles, Yelp reviews, etc).</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <!-- Modal -->
+  <div class="modal fade bd-example-modal-lg" id="healthways" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myLargeModalLabel4">Healthways Website</h4>
+        </div>
+        <div class="modal-body text-center">
+          <picture>
+            <img class="img-fluid" src="images_src/healthways_website.png" alt="healthways logo mockup">
+          </picture>
+          <p class="text-justify">Healthways is a non-profit organization that facilitate community empowerment through inegrated assistance on health, education, livelihood, and organizing services.</p>
+          <p class="text-justify">⚙ Website under construction...</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
