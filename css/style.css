@@ -18,6 +18,10 @@ header {
     max-width: 100%;
 }
 
+.no-padding {
+    padding: 0;
+}
+
 main {
     padding-top: 2em;
 }
@@ -73,8 +77,11 @@ a#viewSource {
     display: inline-flex;
 }
 
-a.zocial-twitter,a.zocial-facebook,a.zocial-googleplus,a.zocial-digg {
+.footer-border {
     border-top: 1px solid #ddd;
+}
+
+.zocial-twitter,.zocial-facebook,.zocial-googleplus,.zocial-digg {
     padding-top: 15px;
 }
 
